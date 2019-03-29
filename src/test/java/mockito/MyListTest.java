@@ -1,3 +1,5 @@
+package mockito;
+
 import org.junit.Test;
 import org.mockito.Mockito;
 
@@ -81,5 +83,7 @@ public class MyListTest {
 
         String element = listMock.get(1);
         assertThat(element, is(equalTo("Always the same")));
+
+        verify(listMock,times(1));
     }
 }

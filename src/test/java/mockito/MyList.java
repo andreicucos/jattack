@@ -1,3 +1,5 @@
+package mockito;
+
 import java.util.AbstractList;
 
 public class MyList extends AbstractList<String> {
